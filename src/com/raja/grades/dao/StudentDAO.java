@@ -44,5 +44,14 @@ public class StudentDAO {
         return "Student Not Found or Already Deleted...";
     }
 
+    public boolean isDuplicateId(int id){
+        for(Student s : studentList){
+            if(id == s.getStudentId()){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }

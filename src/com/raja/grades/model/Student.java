@@ -7,6 +7,7 @@ public class Student {
     private String studentGrade;
     private double studentAvg;
     private Subject subject;
+    private String passOrFailInfo;
 
     public Student(int studentId , String studentName , String studentCourse , Subject subject){
         this.studentId = studentId;
@@ -33,6 +34,14 @@ public class Student {
 
     public void setStudentAvg(double studentAvg) {
         this.studentAvg = studentAvg;
+    }
+
+    public String getPassOrFailInfo() {
+        return passOrFailInfo;
+    }
+
+    public void setPassOrFailInfo(String passOrFailInfo) {
+        this.passOrFailInfo = passOrFailInfo;
     }
 
     public Subject getSubject() {
